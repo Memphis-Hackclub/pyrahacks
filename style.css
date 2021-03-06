@@ -1,0 +1,120 @@
+
+/*body{
+  background-image:url('images/background.gif');
+      height: 100%;
+      width:100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+      color:white;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:ital,wght@0,300;1,300&family=Syncopate:wght@700&display=swap');
+
+html, body {
+  
+  height: 100%;
+  margin: 0;
+  background-color: #424242;
+  color:#fafafa;
+
+}
+
+.top-background{
+      height: 100%;
+      background-position: center;
+      background-attachment: fixed;
+      right: 50%;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      margin: 0;
+      background: url('images/background_1.gif') center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+  
+}
+.titletext{
+  font-family: 'Syncopate', sans-serif;
+  font-size: 125%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+.content{
+
+  font-family: 'Roboto', sans-serif;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 175%;
+  }
+
+@media (max-width : 414px) {
+  .content{
+  margin-right: 2.5em;
+  margin-left:2.5em;
+  font-size: 120%;
+  
+  }
+  .top-background{
+ height: 100%;
+      background-position: center;
+      background-attachment: fixed;
+      right: 50%;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      margin: 0;
+      background: url('images/background_1.gif') center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  
+}
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
