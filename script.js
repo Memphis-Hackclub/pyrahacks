@@ -10,7 +10,7 @@ function nextTime(){
 
   currentDate = new Date(currentDate);
 
-  var referenceDate = new Date("01/7/2021");
+  var referenceDate = new Date("04/15/2021");
   var days = currentDate.getTime() - referenceDate.getTime();
   days = days / (1000 * 3600 * 24);
 
@@ -49,7 +49,7 @@ function nextTime(){
   var yyyy = nextMeeting.getFullYear();
   nextMeeting = mm + '/' + dd + '/' + yyyy;
 
- var text = "<p>Zoom 4 PM Thursday "+nextMeeting+"</p>";
+ var text = "Zoom 4 PM Thursday "+nextMeeting;
 
  console.log("--------------------")
  console.log("#")
@@ -61,8 +61,18 @@ function nextTime(){
 
 }
 
-var meeting = nextTime();
-document.getElementById("zoom").innerHTML = meeting;
+meeting = nextTime();
+meeting  = String(meeting);
 
 
+var speed = 75;
+var i = 0;
 
+function typeWriter() {
+  if (i < meeting.length) {
+    document.getElementById("zoom").innerHTML += meeting.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter()
