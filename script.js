@@ -10,7 +10,7 @@ function nextTime(){
 
   currentDate = new Date(currentDate);
 
-  var referenceDate = new Date("04/15/2021");
+  var referenceDate = new Date("06/25/2021");
   var days = currentDate.getTime() - referenceDate.getTime();
   days = days / (1000 * 3600 * 24);
 
@@ -18,7 +18,7 @@ function nextTime(){
 
   //console.log(currentDay);
 
-  if (currentDay == 4){
+  if (currentDay == 5){
     if(hours >= 20){
       weeks = Math.trunc(weeks) + 1;
     }
@@ -49,7 +49,7 @@ function nextTime(){
   var yyyy = nextMeeting.getFullYear();
   nextMeeting = mm + '/' + dd + '/' + yyyy;
 
- var text = "Zoom 4 PM Thursday "+nextMeeting;
+ var text = "Zoom 4 PM Friday "+nextMeeting;
 
  console.log("--------------------")
  console.log("#")

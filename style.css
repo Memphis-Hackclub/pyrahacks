@@ -32,6 +32,18 @@ html, body {
   width: 100%;
   height: auto;
 }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 150000;
+}
+
 .top-background{
       height: 100%;
       text-align: center;
@@ -56,6 +68,12 @@ html, body {
 
 #zoom{
   color:#fafafa;
+}
+.subwelcome{
+  font-family: 'Syncopate', sans-serif;
+  text-shadow: 1px 1px 1px #92DCE5;
+  color: firebrick;
+  font-size: 1.25em;
 }
 .titletext{
   font-family: 'Syncopate', sans-serif;
@@ -126,6 +144,8 @@ html, body {
   color:#FCA311;
   font-size: 1.5em;
 }
+
+
 
 }
 
