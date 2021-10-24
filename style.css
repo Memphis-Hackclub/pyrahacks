@@ -20,6 +20,10 @@ body {
   height: auto;
 }
 
+#particles {
+  height: 100vh;
+}
+
 .button {
   background-color: #4CAF50;
   /* Green */
@@ -34,7 +38,6 @@ body {
 }
 
 .top-background {
-  height: 100%;
   text-align: center;
   background-position: center;
   background-attachment: fixed;
@@ -43,7 +46,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: auto;
+  height: 100vh;
   z-index: -100;
   margin: 0;
   background: hsl(10deg 98% 63%);
@@ -254,13 +257,6 @@ a {
 .fa:first-of-type {
   margin-left: 0;
   padding-left: 0.5em;
-}
-
-#main1 {
-  background-image: url(images/thekernal.png);
-  background-size: cover;
-  background-position-x: center;
-  box-shadow: 0 8000px rgb(20, 33, 61, 0.99) inset;
 }
 
 @keyframes blink {

@@ -26,10 +26,14 @@
   <link rel="icon" type="image/png" href="/274413.svg" />
   <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/274/274413.svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://unpkg.com/jparticles/browser/jparticles.base.js"></script>
+  <script src="https://unpkg.com/jparticles/browser/particle.js"></script>
+  
 </head>
 
 <body>
   <div class="top-background">
+    <div id="particles"></div>
     <br />
     <div class="titletext">
       <h1>Memphis Hack Club</h1>
@@ -99,6 +103,16 @@
     </div>
   </div>
 </body>
+<script>
+  new JParticles.Particle('#particles', {
+    color: 'rgba(255,255,255,.2)',
+    lineShape: 'cube',
+    range: 2000,
+    proximity: 100,
+    parallax: true,
+    maxSpeed: 0.3
+})
+</script>
 <script src="script.js"></script>
 
 </html>
