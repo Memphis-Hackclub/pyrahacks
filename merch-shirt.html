@@ -27,23 +27,89 @@
   <br>
   <h1 class="welcome">Memphis HackClub Merch</h1>
 
-        
- 
-           <p>Memphis HackClub is a student ran club free for any student to join despite where they go to school or how much experience they have. To continue to fund our growth and amazing events we are a non-profit backed organization. Memphis Hackclub sells merch and 100% of the profits to go to the club - student leadership does not in any get paid from merch sells or donations.</p><br>
- 
-           <h1 class="welcome">T-Shirt</h1>
+
+ <h1 class="welcome">MHC t-shirt multi - color options</h1>
   
 <img class = "projectImgs" id="image" src = "merch-images/shirt-images/White.png" height="100" width="180" id = "shirt-image">
-           <p>This is a great Memphis HackClub t-shirt designed by the best fasion designers, the Memphis Hackclub Leadershipt Team!<br><br>
-             <right>THE_SHIRT[0].type() = Unisex Classic T-Shirt | Fruit of the Loom 3930;<br><br>
-
-<select id="picDD" class="dropdown">
-    <option value="0" class = "white" selected>White</option>
-    <option value="1" class = "red">Red</option>
-    <option value="2" class = "yellow">Yellow</option>
-    <option value="3" class = "navy">Navy</option>
-    <option value="4"class = "pink">Pink</option>
+          <br>
+          <h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
+    <option value="White" class = "white" selected>White</option>
+    <option value="Red" class = "red">Red</option>
+    <option value="Yellow" class = "yellow">Yellow</option>
+    <option value="Navy" class = "navy">Navy</option>
+    <option value="Pink"class = "pink">Pink</option>
 </select>
+<br><br>
+             <p><right>//The materials that went into this product are sustainably sourced and economically friendly.
+
+<right><br>//100% Cotton (fiber content may vary for different colors)
+<right><br>//Medium fabric (6.0 oz/yd² (203 g/m²))<br><br>
+</p>
+
+
+
+SHIRT_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', '6XL' ];<br><br>
+
+PRICE = $25;<br></right>
+           </p>
+<br>
+
+<br>
+<h1>Choose Options for checkout</h1>
+<br>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="philippounds@memphishack.com">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="item_name" value="Memphis HackClub T-Shirt">
+<input type="hidden" name="item_number" value="42">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax_rate" value="0.000">
+<input type="hidden" name="shipping" value="0.00">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+<table>
+<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+	<option value="Small">Small $25.00 USD</option>
+	<option value="Medium">Medium $25.00 USD</option>
+	<option value="Large">Large $25.00 USD</option>
+	<option value="XL">XL $25.00 USD</option>
+	<option value="2XL">2XL $25.00 USD</option>
+	<option value="3XL">3XL $25.00 USD</option>
+	<option value="4XL">4XL $25.00 USD</option>
+	<option value="5XL">5XL $25.00 USD</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Color"> Color</td></tr><tr><td><select name="os1">
+	<option value="White" class = "white" selected>White </option>
+	<option value="Pink" class = "pink">Pink </option>
+	<option value="Blue" class = "navy">Navy </option>
+	<option value="Red" class = "red">Red </option>
+	<option value="Yellow" class = "yellow">Yellow </option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="option_select0" value="Small">
+<input type="hidden" name="option_amount0" value="25.00">
+<input type="hidden" name="option_select1" value="Medium">
+<input type="hidden" name="option_amount1" value="25.00">
+<input type="hidden" name="option_select2" value="Large">
+<input type="hidden" name="option_amount2" value="25.00">
+<input type="hidden" name="option_select3" value="XL">
+<input type="hidden" name="option_amount3" value="25.00">
+<input type="hidden" name="option_select4" value="2XL">
+<input type="hidden" name="option_amount4" value="25.00">
+<input type="hidden" name="option_select5" value="3XL">
+<input type="hidden" name="option_amount5" value="25.00">
+<input type="hidden" name="option_select6" value="4XL">
+<input type="hidden" name="option_amount6" value="25.00">
+<input type="hidden" name="option_select7" value="5XL">
+<input type="hidden" name="option_amount7" value="25.00">
+<input type="hidden" name="option_index" value="0"><br>
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
  <script>
 
@@ -54,11 +120,21 @@ var pictureList = [
     "merch-images/shirt-images/Navy.png",
     "merch-images/shirt-images/Pink.png", ];
 
+
+var valList = [
+  "White", "Red", "Yellow", "Navy", "Pink", ];
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
     const yearDropDown = document.getElementById('picDD');
     yearDropDown.addEventListener('change', () => { 
-        val = yearDropDown.value
-        document.getElementById("image").src=pictureList[val];
+        
+        val = yearDropDown.value;
+        console.log(val);
+        val2 = valList.indexOf(val);
+
+        document.getElementById("image").src=pictureList[val2];
     });
 });
 
@@ -108,66 +184,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 </style>
 
-
-SHIRT_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', '6XL' ];<br><br>
-
-PRICE = $25;<br></right>
-           </p>
-<br>
-
-
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-<input type="hidden" name="cmd" value="_cart">
-<input type="hidden" name="business" value="philippounds@memphishack.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="item_name" value="Memphis HackClub T-Shirt">
-<input type="hidden" name="item_number" value="42">
-<input type="hidden" name="button_subtype" value="products">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="tax_rate" value="0.000">
-<input type="hidden" name="shipping" value="0.00">
-<input type="hidden" name="add" value="1">
-<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
-<table>
-<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
-	<option value="Small">Small $25.00 USD</option>
-	<option value="Medium">Medium $25.00 USD</option>
-	<option value="Large">Large $25.00 USD</option>
-	<option value="XL">XL $25.00 USD</option>
-	<option value="2XL">2XL $25.00 USD</option>
-	<option value="3XL">3XL $25.00 USD</option>
-	<option value="4XL">4XL $25.00 USD</option>
-	<option value="5XL">5XL $25.00 USD</option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="Color">Color</td></tr><tr><td><select name="os1">
-	<option value="White">White </option>
-	<option value="Pink">Pink </option>
-	<option value="Blue">Blue </option>
-	<option value="Red">Red </option>
-	<option value="Yellow">Yellow </option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="option_select0" value="Small">
-<input type="hidden" name="option_amount0" value="25.00">
-<input type="hidden" name="option_select1" value="Medium">
-<input type="hidden" name="option_amount1" value="25.00">
-<input type="hidden" name="option_select2" value="Large">
-<input type="hidden" name="option_amount2" value="25.00">
-<input type="hidden" name="option_select3" value="XL">
-<input type="hidden" name="option_amount3" value="25.00">
-<input type="hidden" name="option_select4" value="2XL">
-<input type="hidden" name="option_amount4" value="25.00">
-<input type="hidden" name="option_select5" value="3XL">
-<input type="hidden" name="option_amount5" value="25.00">
-<input type="hidden" name="option_select6" value="4XL">
-<input type="hidden" name="option_amount6" value="25.00">
-<input type="hidden" name="option_select7" value="5XL">
-<input type="hidden" name="option_amount7" value="25.00">
-<input type="hidden" name="option_index" value="0">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+  </script>
 
 
 
