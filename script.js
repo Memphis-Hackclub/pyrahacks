@@ -1,3 +1,4 @@
+console.log("https://the-new-website-2.philippounds.repl.co/merch.html\n")
 function nextTime() {
 
   var currentDate = new Date();
