@@ -33,11 +33,7 @@
   
 <img class = "projectImgs" id="image" src = "merch-images/hacky-bd-shirt/on.png" height="100" width="180" id = "shirt-image">
           <br>
-          <h1>Shirt Type Preview Tool</h1><select id="picDD" class="dropdown">
-    <option value="on" class = "on" selected>Camera On (no party hat)</option>
-    <option value="off" class = "off">Camera Off (party hat)</option>
 
-</select>
 <br><br>
              <p><right>//The materials that went into this product are sustainably sourced and economically friendly.
 
@@ -56,16 +52,17 @@ PRICE = $25;<br></right>
 <br>
 <h1>Choose Options for checkout</h1>
 <h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
-    <option value="White" class = "white" selected>White</option>
-    <option value="Navy" class = "navy">Navy</option>
+    <option value="on" class = "on" selected>Camera On (no party hat)</option>
+    <option value="off" class = "off">Camera Off (party hat)</option>
+
 </div>
     </select>
 <br>
 
 <select id="sizeID" class="dropdown">
-    <option value="small" class = "small" selected>small</option>
-    <option value="medium" class = "medium">medium</option>
-    <option value="large" class = "large">large</option>
+    <option value="s class = "small" selected>small</option>
+    <option value="m" class = "medium">medium</option>
+    <option value="l" class = "large">large</option>
     <option value="xl" class = "xl">xl</option>
     <option value="2xl" class = "2xl">2xl</option>
     <option value="3xl" class = "3xl">3xl</option>
@@ -97,7 +94,8 @@ PRICE = $25;<br></right>
 <label> If other State<input type="text" id="os"><br><br></label>
 
 <label> Zip Code<input type="text" id="zipcode"><br><br></label>
-<label> Email<input type="email" id="email">
+<label> Email<input type="email" id="email"><br><br>
+<label> Name<input type="text" id="name">
 <br><br>
 <label>Would you like MHC updates sent to this email?<select id="ec" class="dropdown"><br>
     <option value="yes"  selected>Yes!!!</option>
@@ -181,18 +179,20 @@ otherState = document.getElementById('os').value;
 zipCode = document.getElementById('zipcode').value;
 email = document.getElementById('email').value;
 emailConsent = document.getElementById('ec').value;
+ name = document.getElementById('name').value;
 
   if (address != "" && city != "" && state !="" && zipCode != "" && email != "" &&emailConsent !=""){
-  finalAddress = "Shipping Address:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Email to recieve order updates"+email+" \n Consent to recieve other MHC emails:"+emailConsent;
+   finalAddress =  name+"Email:"+email+"\n Ship2:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Other MHC emails:"+emailConsent;
   console.log(finalAddress) 
   }
 
     
  
     
-var message = "We are very hacky happy that you ordered a "+finalSize+" hoodie in "+val+"! Thank so much for your order!\n"+finalAddress;
+var message = finalSize+" S "+val+" "+finalAddress;
 newHTML = `<form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="business" value="NE8NKEAJEVWNL" />
+<input type="hidden" name="business" value="7TSMGFEKXAFUY" />
+<input type="hidden" name="amount" value="25" />
 <input type="hidden" name="no_recurring" value="1" />
 <input type="hidden" name="item_name" value="`+message+`" />
 <input type="hidden" name="currency_code" value="USD" />
@@ -211,6 +211,7 @@ newHTML = `<form action="https://www.paypal.com/donate" method="post" target="_t
 
 </script>
 
+<p>Due our system being new please fill out <a href="https://forms.gle/Hsio685Kw8uR2uKV7" target="_blank">this Google Form</a> with the same info, so we can make sure our system is correct. And thank you!</p><br><br>
 <input type='button' onclick='createButton()' value='Buy Now'/>
 <br>
 <a href="https://donate.memphishack.com"
