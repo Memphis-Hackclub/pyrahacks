@@ -87,10 +87,10 @@ PRICE = $45;<br></right>
 <br><br>
 <label>City<input id="city" type="text"><br>
 <label>State<select id="state" class="dropdown">
-    <option value="Tennessee"  selected>Tennessee</option>
-    <option value="Mississippi" >Mississippi</option>
-    <option value="Arkansas" >Arkansas</option>
-    <option value="Other">Other State</option>
+    <option value="TN"  selected>Tennessee</option>
+    <option value="MS" >Mississippi</option>
+    <option value="AR" >Arkansas</option>
+    <option value="O">Other State</option>
 </select>
 <br><br>
 <label> If other State<input type="text" id="os"><br><br></label>
@@ -180,14 +180,14 @@ email = document.getElementById('email').value;
 emailConsent = document.getElementById('ec').value;
 
   if (address != "" && city != "" && state !="" && zipCode != "" && email != "" &&emailConsent !=""){
-  finalAddress = "Shipping Address:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Email to recieve order updates"+email+" \n Consent to recieve other MHC emails:"+emailConsent;
+  finalAddress =  "Email:"+email+"\n Ship2:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Other MHC emails:"+emailConsent;
   console.log(finalAddress) 
   }
 
     
  
     
-var message = "We are very hacky happy that you ordered a "+finalSize+" hoodie in "+val+"! Thank so much for your order!\n"+finalAddress;
+var message = finalSize+" H "+val+" "+finalAddress;
 newHTML = `<form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="business" value="NE8NKEAJEVWNL" />
 <input type="hidden" name="no_recurring" value="1" />
