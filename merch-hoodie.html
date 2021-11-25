@@ -32,12 +32,7 @@
  <h1 class="welcome">MHC Hoodie - 2 color options</h1>
   
 <img class = "projectImgs" id="image" src = "merch-images/hoodie-images/white.png" height="100" width="180" id = "shirt-image">
-          <br>
-          <h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
-    <option value="White" class = "white" selected>White</option>
-    <option value="Navy" class = "navy">Navy</option>
 
-</select>
 <br><br>
              <p><right>//Just like a nice warm hug, this hooded sweatshirt made of a soft 50% cotton and 50% polyester fabric is perfect for the fall. Its regular fit assures the perfect balance of long-lasting comfort and a contemporary silhouette. Featuring a hood, Kangaroo pocket and set-in sleeves, you’ll have it in your wardrobe for longer than the cold. Printed in Germany.
 <br>
@@ -58,60 +53,67 @@ PRICE = $45;<br></right>
 <br>
 
 <br>
-<h1>Choose Options for checkout</h1>
+<h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
+    <option value="White" class = "white" selected>White</option>
+    <option value="Navy" class = "navy">Navy</option>
+</div>
+    </select>
 <br>
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 
-<input type="hidden" name="cmd" value="_cart">
-<input type="hidden" name="business" value="philippounds@memphishack.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="item_name" value="Memphis HackClub Hoodie">
-<input type="hidden" name="item_number" value="271828">
-<input type="hidden" name="button_subtype" value="products">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="tax_rate" value="0.000">
-<input type="hidden" name="shipping" value="0.00">
-<input type="hidden" name="add" value="1">
-<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
-<table>
-<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
-	<option value="Small">Small $45.00 USD</option>
-	<option value="Medium">Medium $45.00 USD</option>
-	<option value="Large">Large $45.00 USD</option>
-	<option value="XL">XL $45.00 USD</option>
-	<option value="2XL">2XL $45.00 USD</option>
-	<option value="3XL">3XL $45.00 USD</option>
-	<option value="4XL">4XL $45.00 USD</option>
-	<option value="5XL">5XL $45.00 USD</option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="Color"> Color</td></tr><tr><td><select name="os1">
-	<option value="White" class = "white" selected>White </option>
-	<option value="Blue" class = "navy">Navy </option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="option_select0" value="Small">
-<input type="hidden" name="option_amount0" value="45.00">
-<input type="hidden" name="option_select1" value="Medium">
-<input type="hidden" name="option_amount1" value="45.00">
-<input type="hidden" name="option_select2" value="Large">
-<input type="hidden" name="option_amount2" value="45.00">
-<input type="hidden" name="option_select3" value="XL">
-<input type="hidden" name="option_amount3" value="45.00">
-<input type="hidden" name="option_select4" value="2XL">
-<input type="hidden" name="option_amount4" value="45.00">
-<input type="hidden" name="option_select5" value="3XL">
-<input type="hidden" name="option_amount5" value="45.00">
-<input type="hidden" name="option_select6" value="4XL">
-<input type="hidden" name="option_amount6" value="45.00">
-<input type="hidden" name="option_select7" value="5XL">
-<input type="hidden" name="option_amount7" value="45.00">
-<input type="hidden" name="option_index" value="0"><br>
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+<select id="sizeID" class="dropdown">
+    <option value="small" class = "small" selected>small</option>
+    <option value="medium" class = "medium">medium</option>
+    <option value="large" class = "large">large</option>
+    <option value="xl" class = "xl">xl</option>
+    <option value="2xl" class = "2xl">2xl</option>
+    <option value="3xl" class = "3xl">3xl</option>
+    <option value="4xl" class = "4xl">4xl</option>
+    <option value="5xl" class = "5xl">5xl</option>
 
- <script>
+
+]
+</select>
+
+<h1>Shipping Info</h1>
+
+
+<br>
+<label>Address<br><textarea id="address"  rows="4" cols="50">
+ 
+  </textarea><br>
+<label>Address 2 (Optional)<br><textarea id="address2" rows="4" cols="50">
+ 
+  </textarea>
+<br><br>
+<label>City<input id="city" type="text"><br>
+<label>State<select id="state" class="dropdown">
+    <option value="Tennessee"  selected>Tennessee</option>
+    <option value="Mississippi" >Mississippi</option>
+    <option value="Arkansas" >Arkansas</option>
+    <option value="Other">Other State</option>
+</select>
+<br><br>
+<label> If other State<input type="text" id="os"><br><br></label>
+
+<label> Zip Code<input type="text" id="zipcode"><br><br></label>
+<label> Email<input type="email" id="email">
+<br><br>
+<label>Would you like MHC updates sent to this email?<select id="ec" class="dropdown"><br>
+    <option value="yes"  selected>Yes!!!</option>
+    <option value="no" >No.</option>
+
+<br></select>
+
+
+<div id="paypalPlace"></div>
+
+
+
+<script type="text/javascript">
+
+val = 'white';
+finalSize = 'medium';
+
 
 var pictureList = [
     "merch-images/hoodie-images/white.png",
@@ -130,13 +132,87 @@ window.addEventListener('DOMContentLoaded', () => {
         val = yearDropDown.value;
         console.log(val);
         val2 = valList.indexOf(val);
+        color = pictureList[val2];
 
-        document.getElementById("image").src=pictureList[val2];
+        document.getElementById("image").src=color;
+
+    
+    
+
+
+    
+    ;
+
     });
 });
 
 
-  </script>
+    window.addEventListener('DOMContentLoaded', () => {
+    const size = document.getElementById('sizeID');
+    size.addEventListener('change', () => { 
+
+      sizeVal = size.value;
+        console.log(sizeVal);
+        sizeVal2 = valList.indexOf(sizeVal);
+        finalSize = pictureList[sizeVal2];
+
+        
+        
+
+    });
+});
+
+address2 = "NA";
+otherstate ="NA";
+
+
+
+function createButton(){
+
+
+address = document.getElementById('address').value;
+address2 = document.getElementById('address2').value;
+city = document.getElementById('city').value;
+state = document.getElementById('state').value;
+otherState = document.getElementById('os').value;
+zipCode = document.getElementById('zipcode').value;
+email = document.getElementById('email').value;
+emailConsent = document.getElementById('ec').value;
+
+  if (address != "" && city != "" && state !="" && zipCode != "" && email != "" &&emailConsent !=""){
+  finalAddress = "Shipping Address:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Email to recieve order updates"+email+" \n Consent to recieve other MHC emails:"+emailConsent;
+  console.log(finalAddress) 
+  }
+
+    
+ 
+    
+var message = "We are very hacky happy that you ordered a "+finalSize+" hoodie in "+val+"! Thank so much for your order!\n"+finalAddress;
+newHTML = `<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="business" value="NE8NKEAJEVWNL" />
+<input type="hidden" name="no_recurring" value="1" />
+<input type="hidden" name="item_name" value="`+message+`" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>`;
+    console.log(message);
+    document.getElementById('paypalPlace').innerHTML = newHTML;
+    
+}
+
+
+
+
+
+
+</script>
+
+<input type='button' onclick='createButton()' value='Buy Now'/>
+<br>
+<a href="https://donate.memphishack.com"
+target="_blank">Consider making a tax deductible donation to Memphis HackClub today!- Any amount helps!</a>
+
 
 <style>
   .dropdown {
@@ -203,5 +279,6 @@ window.addEventListener('DOMContentLoaded', () => {
 <script src="script.js"></script>
 
     
+</div>
 
 </html>
