@@ -182,6 +182,7 @@ otherState = document.getElementById('os').value;
 zipCode = document.getElementById('zipcode').value;
 email = document.getElementById('email').value;
 emailConsent = document.getElementById('ec').value;
+ name = document.getElementById('name').value;
 
   if (address != "" && city != "" && state !="" && zipCode != "" && email != "" &&emailConsent !=""){
   finalAddress =  "Email:"+email+"\n Ship2:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Other MHC emails:"+emailConsent;
@@ -212,6 +213,7 @@ newHTML = `<form action="https://www.paypal.com/donate" method="post" target="_t
 
 </script>
 
+<p>When checking out please click include my shipping address. And in case we cannot get all your order or shipping info, we will email you.</p>
 <input type='button' onclick='createButton()' value='Buy Now'/>
 <br>
 <a href="https://donate.memphishack.com"
