@@ -50,17 +50,19 @@ PRICE = $25;<br></right>
 <br>
 
 <br>
-<h1>Choose Options for checkout</h1>
-<h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
-    <option value="on" class = "on" selected>Camera On (no party hat)</option>
-    <option value="off" class = "off">Camera Off (party hat)</option>
-
+<br>
+    <h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
+    <option value="Red" class = "red" selected>Red</option>
+    <option value="Green" class = "green">Green</option>
+    <option value="Light-Blue" class = "light-blue">Light-Blue</option>
+    <option value="Navy" class = "navy">Navy</option>
+    <option value="Purple"class = "purple">Purple</option>
 </div>
     </select>
 <br>
 
 <select id="sizeID" class="dropdown">
-    <option value="s class = "small" selected>small</option>
+    <option value="s" class = "small" selected>small</option>
     <option value="m" class = "medium">medium</option>
     <option value="l" class = "large">large</option>
     <option value="xl" class = "xl">xl</option>
@@ -85,10 +87,10 @@ PRICE = $25;<br></right>
 <br><br>
 <label>City<input id="city" type="text"><br>
 <label>State<select id="state" class="dropdown">
-    <option value="Tennessee"  selected>Tennessee</option>
-    <option value="Mississippi" >Mississippi</option>
-    <option value="Arkansas" >Arkansas</option>
-    <option value="Other">Other State</option>
+    <option value="TN"  selected>Tennessee</option>
+    <option value="MS" >Mississippi</option>
+    <option value="AR" >Arkansas</option>
+    <option value="O">Other State</option>
 </select>
 <br><br>
 <label> If other State<input type="text" id="os"><br><br></label>
@@ -102,7 +104,7 @@ PRICE = $25;<br></right>
     <option value="no" >No.</option>
 
 <br></select>
-<br><br>
+<br>
 <p>T-Shirts are printed in Detroit Michigan, and take around a week to arrive.
 
 Due our system being new please fill out <a href="https://forms.gle/Hsio685Kw8uR2uKV7" target="_blank">this Google Form</a> with the same info, so we can make sure our system is correct. 
@@ -112,9 +114,12 @@ Due our system being new please fill out <a href="https://forms.gle/Hsio685Kw8uR
 target="_blank">Consider making a tax deductible donation to Memphis HackClub today!- Any amount helps! And thank you!</a>
 </p><br>
 
+
+
+
+
 <div id="paypalPlace"></div>
 
-<input type='button' onclick='createButton()' value='Buy Now'/>
 
 
 
@@ -125,13 +130,16 @@ finalSize = 'medium';
 
 
 var pictureList = [
-    "merch-images/hacky-bd-shirt/off.png",
-    "merch-images/hacky-bd-shirt/on.png",
- ];
+    "merch-images/hack-holiday/red.png",
+    "merch-images/hack-holiday/green.png",
+    "merch-images/hack-holiday/light-blue.png",
+    "merch-images/hack-holiday/navy.png",
+    "merch-images/hack-holiday/purple.png", ];
 
 
 var valList = [
-  "off", "on", ];
+  "Red", "Green", "Light-Blue", "Navy", "Purple", ];
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -190,14 +198,14 @@ emailConsent = document.getElementById('ec').value;
  name = document.getElementById('name').value;
 
   if (address != "" && city != "" && state !="" && zipCode != "" && email != "" &&emailConsent !=""){
-   finalAddress =  name+"Email:"+email+"\n Ship2:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Other MHC emails:"+emailConsent;
+  finalAddress =  name+"Email:"+email+"\n Ship2:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Other MHC emails:"+emailConsent;
   console.log(finalAddress) 
   }
 
     
  
     
-var message = finalSize+" S "+val+" "+finalAddress;
+var message = finalSize+" HB S"+val+" "+finalAddress;
 newHTML = `
 <p>Click Buy Below to Pay</p>
 <form action="https://www.paypal.com/donate" method="post" target="_top">
@@ -209,6 +217,10 @@ newHTML = `
 <input type="image" src="https://cdn-icons.flaticon.com/png/512/3757/premium/3757945.png?token=exp=1638162700~hmac=0853327e77efe04f6b7233a656616edb" height="25%" width="25%" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Pay with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form>`;
+
+
+
+;
     console.log(message);
     document.getElementById('paypalPlace').innerHTML = newHTML;
     
@@ -220,6 +232,10 @@ newHTML = `
 
 
 </script>
+
+
+
+
 
 
 
@@ -288,9 +304,6 @@ newHTML = `
 <script src="script.js"></script>
 
     
-
-</html>
-
 
 
 
