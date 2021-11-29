@@ -102,12 +102,19 @@ PRICE = $25;<br></right>
     <option value="no" >No.</option>
 
 <br></select>
-<br>
-<p>T-Shirts are printed in Detroit Michigan, and take around a week to arrive.</p>
+<br><br>
+<p>T-Shirts are printed in Detroit Michigan, and take around a week to arrive.
 
+Due our system being new please fill out <a href="https://forms.gle/Hsio685Kw8uR2uKV7" target="_blank">this Google Form</a> with the same info, so we can make sure our system is correct. 
+
+
+<a href="https://donate.memphishack.com"
+target="_blank">Consider making a tax deductible donation to Memphis HackClub today!- Any amount helps! And thank you!</a>
+</p><br>
 
 <div id="paypalPlace"></div>
 
+<input type='button' onclick='createButton()' value='Buy Now'/>
 
 
 
@@ -191,13 +198,15 @@ emailConsent = document.getElementById('ec').value;
  
     
 var message = finalSize+" S "+val+" "+finalAddress;
-newHTML = `<form action="https://www.paypal.com/donate" method="post" target="_top">
+newHTML = `
+<p>Click Buy Below to Pay</p>
+<form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="business" value="7TSMGFEKXAFUY" />
 <input type="hidden" name="amount" value="25" />
 <input type="hidden" name="no_recurring" value="1" />
 <input type="hidden" name="item_name" value="`+message+`" />
 <input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<input type="image" src="https://cdn-icons.flaticon.com/png/512/3757/premium/3757945.png?token=exp=1638162700~hmac=0853327e77efe04f6b7233a656616edb" height="25%" width="25%" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form>`;
     console.log(message);
@@ -212,11 +221,6 @@ newHTML = `<form action="https://www.paypal.com/donate" method="post" target="_t
 
 </script>
 
-<p>Due our system being new please fill out <a href="https://forms.gle/Hsio685Kw8uR2uKV7" target="_blank">this Google Form</a> with the same info, so we can make sure our system is correct. And thank you!</p><br><br>
-<input type='button' onclick='createButton()' value='Buy Now'/>
-<br>
-<a href="https://donate.memphishack.com"
-target="_blank">Consider making a tax deductible donation to Memphis HackClub today!- Any amount helps!</a>
 
 
 <style>
