@@ -18,7 +18,7 @@
         <a href="index.html">Home</a>
         <a href="howtojoin.html">Join MHC</a>
         <a href="contact.html">Contact</a>
-        <a href="projects.html">Past Projects</a>
+        <a href="#main">Past Projects</a>
         <a href="merch.html">Merch</a>
 
       </div>
@@ -26,44 +26,42 @@
 <div class="content">
 <br><center>
   <br>
-  <h1 class="welcome">Memphis HackClub Merch</h1>
 
-
- <h1 class="welcome">MHC Hoodie - 2 color options</h1>
   
-<img class = "projectImgs" id="image" src = "merch-images/hoodie-images/white.png" height="100" width="180" id = "shirt-image">
+
+ <h1 class="welcome">A Happy Invite</h1>
+  
+<img class = "projectImgs" id="image" src = "merch-images/chuck.png" height="100" width="180" id = "shirt-image">
+          <br>
 
 <br><br>
-             <p><right>//Just like a nice warm hug, this hooded sweatshirt made of a soft 50% cotton and 50% polyester fabric is perfect for the fall. Its regular fit assures the perfect balance of long-lasting comfort and a contemporary silhouette. Featuring a hood, Kangaroo pocket and set-in sleeves, you’ll have it in your wardrobe for longer than the cold. Printed in Germany.
-<br>
-<right>// 50% combed ringspun cotton, 50% polyester<br><br>
-<right>// Medium fabric (7.96 oz/yd² (270 g/m²))<br><br>
-<right>// Brushed fleece inside<br><br>
-<right>// Regular fit<br><br>
-<right>// Runs true to size<br><br>
-<right>// Free Shipping
+             <p><right>//The materials that went into this product are sustainably sourced and economically friendly.
 
-<br>
-<br>
+<right><br>//100% Cotton (fiber content may vary for different colors)
+<right><br>//Medium fabric (6.0 oz/yd² (203 g/m²))<br><br>
+</p>
 
-HOODIE_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', '6XL' ];<br><br>
 
-PRICE = $45;<br></right>
+
+SHIRT_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', '6XL' ];<br><br>
+
+PRICE = $25;<br></right>
            </p>
 <br>
 
 <br>
-<h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
-    <option value="White" class = "white" selected>White</option>
-    <option value="Navy" class = "navy">Navy</option>
+<h1>Choose Options for checkout</h1>
+<h1>Style Preview Tool</h1><select id="picDD" class="dropdown">
+    <option value="on" class = "on" selected>On Style</option>
+
 </div>
     </select>
 <br>
 
 <select id="sizeID" class="dropdown">
-    <option value="small" class = "small" selected>small</option>
-    <option value="medium" class = "medium">medium</option>
-    <option value="large" class = "large">large</option>
+    <option value="s class = "small" selected>small</option>
+    <option value="m" class = "medium">medium</option>
+    <option value="l" class = "large">large</option>
     <option value="xl" class = "xl">xl</option>
     <option value="2xl" class = "2xl">2xl</option>
     <option value="3xl" class = "3xl">3xl</option>
@@ -71,11 +69,10 @@ PRICE = $45;<br></right>
     <option value="5xl" class = "5xl">5xl</option>
 
 
-]
-</select>
-<p>Navy small and navy medium are out of stock currently.</p>
-<h1>Shipping Info</h1>
 
+</select>
+
+<h1>Shipping Info</h1>
 
 <br>
 <label>Address<br><textarea id="address"  rows="4" cols="50">
@@ -87,14 +84,15 @@ PRICE = $45;<br></right>
 <br><br>
 <label>City<input id="city" type="text"><br>
 <label>State<select id="state" class="dropdown">
-    <option value="TN"  selected>Tennessee</option>
-    <option value="MS" >Mississippi</option>
-    <option value="AR" >Arkansas</option>
-    <option value="O">Other State</option>
+    <option value="Tennessee"  selected>Tennessee</option>
+    <option value="Mississippi" >Mississippi</option>
+    <option value="Arkansas" >Arkansas</option>
+    <option value="Other">Other State</option>
 </select>
 <br><br>
 <label> If other State<input type="text" id="os"><br><br></label>
 
+<label> Zip Code<input type="text" id="zipcode"><br><br></label>
 <label> Email<input type="email" id="email"><br><br>
 <label> Name<input type="text" id="name">
 <br><br>
@@ -103,9 +101,8 @@ PRICE = $45;<br></right>
     <option value="no" >No.</option>
 
 <br></select>
-<br>
-<p>Hoodies are printed in Germany, and take around a 2-3 weeks to arrive.
-
+<br><br>
+<p>T-Shirts are printed in Detroit Michigan, and take around a week to arrive.
 
 Due our system being new please fill out <a href="https://forms.gle/Hsio685Kw8uR2uKV7" target="_blank">this Google Form</a> with the same info, so we can make sure our system is correct. 
 
@@ -116,8 +113,7 @@ target="_blank">Consider making a tax deductible donation to Memphis HackClub to
 
 <div id="paypalPlace"></div>
 
-
-<div id="paypalPlace"></div>
+<input type='button' onclick='createButton()' value='Buy Now'/>
 
 
 
@@ -128,13 +124,13 @@ finalSize = 'medium';
 
 
 var pictureList = [
-    "merch-images/hoodie-images/white.png",
-    "merch-images/hoodie-images/navy.jpeg",];
+    "merch-images/hacky-bd-shirt/off.png",
+    "merch-images/hacky-bd-shirt/on.png",
+ ];
 
 
 var valList = [
-  "White", "Navy", ];
-
+  "off", "on", ];
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -200,12 +196,12 @@ emailConsent = document.getElementById('ec').value;
     
  
     
-var message = finalSize+" H "+val+" "+finalAddress;
+var message = finalSize+" S "+val+" "+finalAddress;
 newHTML = `
 <p>Click Buy Below to Pay</p>
 <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="business" value="7TSMGFEKXAFUY" />
-<input type="hidden" name="amount" value="45" />
+<input type="hidden" name="amount" value="25" />
 <input type="hidden" name="no_recurring" value="1" />
 <input type="hidden" name="item_name" value="`+message+`" />
 <input type="hidden" name="currency_code" value="USD" />
@@ -218,7 +214,12 @@ newHTML = `
 }
 
 
+
+
+
+
 </script>
+
 
 
 <style>
@@ -286,6 +287,11 @@ newHTML = `
 <script src="script.js"></script>
 
     
-</div>
 
 </html>
+
+
+
+
+
+
