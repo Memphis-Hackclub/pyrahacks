@@ -180,7 +180,8 @@ a:hover #zoom {
 
 .navbar {
   font-family: 'Syncopate', sans-serif;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
