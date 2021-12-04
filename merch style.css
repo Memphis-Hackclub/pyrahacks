@@ -15,7 +15,7 @@ body {
   color: #fafafa;
 }
 
-.projectImgs {
+.cardImgs {
   width: 100%;
   height: 100%;
 }
@@ -293,7 +293,7 @@ iframe {
     font-size: 1em;
   }
 
-  .projectImgs {
+  .cardImgs {
     width: 100%;
     height: 100%;
   }
@@ -346,15 +346,12 @@ iframe {
   }
 }
 
-.project-grid {
+.card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
 }
 
-
-
-.project-title {
+.card-title {
   font-size: 1.5em;
   font-family: 'Space Mono';
   font-weight: 400;
@@ -362,25 +359,25 @@ iframe {
   padding-bottom: 0.3em;
 }
 
-.project img {
+.card img {
   height: 70vh;
   object-fit: cover;
   border-radius: 0.2em;
 }
 
-.project p {
+.card p {
   font-size: 0.9em;
   text-align: left;
 }
 
 @media (max-width: 1150px) {
-  .project-grid {
+  .card-grid {
     grid-template-columns: auto auto;
   }
 }
 
 @media (max-width: 675px) {
-  .project-grid {
+  .card-grid {
     grid-template-columns: auto;
   }
 }
