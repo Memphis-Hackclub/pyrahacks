@@ -160,7 +160,7 @@ a:hover #zoom {
   line-height: 1.5em;
 }
 
-.content a:not(.fa):after {
+p a:not(.fa):after {
   content: "\f0a9";
   font-family: FontAwesome;
   font-size: 0;
@@ -173,7 +173,7 @@ a:hover #zoom {
   transform: translateY(-1px);
 }
 
-.content a:hover::after {
+p a:hover::after {
   font-size: 0.7em;
   transition: 0.2s;
 }
@@ -349,7 +349,7 @@ iframe {
 
 .card-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
@@ -376,6 +376,15 @@ iframe {
   border-radius: 0.2em;
 }
 
+.merch>.card img {
+  object-fit: contain !important;
+  background: white;
+}
+
+.merch>.card>a>.card-title, .merch>.card>.card-title {
+  text-align: left;
+}
+
 .card p {
   font-size: 0.9em;
   text-align: left;
@@ -383,7 +392,7 @@ iframe {
 
 @media (max-width: 1150px) {
   .card-grid {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

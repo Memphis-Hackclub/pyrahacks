@@ -1,314 +1,207 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="description" content="Memphis Hackclub is a coding and engineering club open to any student at any skill level!">
-  <meta name="keywords" content="memphis coding, memphis student coding, memphis stem, memphis hacking, memphis hackothons, memphis student clubs, whitestation coding, midtown memphis coding, west memphis student clubs, student coding groups memphis, student programming groups memphis, memphis computer science, memphis hackclub, memphis student engineering, memphis student coding groups">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Memphis Hackclub Merch</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <link rel="icon" type="image/png" href="/274413.svg">
-  <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/274/274413.svg">
+    <meta name="description" content="Memphis Hackclub is a coding and engineering club open to any student at any skill level!">
+    <meta
+      name="keywords"
+      content="memphis coding, memphis student coding, memphis stem, memphis hacking, memphis hackothons, memphis student clubs, whitestation coding, midtown memphis coding, west memphis student clubs, student coding groups memphis, student programming groups memphis, memphis computer science, memphis hackclub, memphis student engineering, memphis student coding groups">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memphis Hackclub Merch</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="merch.css">
+    <link rel="icon" type="image/png" href="/274413.svg">
+    <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/274/274413.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-
-        <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="howtojoin.html">Join MHC</a>
-        <a href="contact.html">Contact</a>
-        <a href="#main">Past Projects</a>
-        <a href="merch.html">Merch</a>
-
-      </div>
-<div id="main">
-<div class="content">
-<br><center>
-  <br>
-
-  
-
- <h1 class="welcome">Hacky Holidays MHC t-shirt - Multi Colored</h1>
-  
-<img class = "projectImgs" id="image" src = "merch-images/hack-holiday/red.png" height="100" width="180" id = "shirt-image">
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="howtojoin.html">Join MHC</a>
+      <a href="contact.html">Contact</a>
+      <a href="#main">Past Projects</a>
+      <a href="merch.html">Merch</a>
+    </div>
+    <div id="main">
+      <div class="content merch">
+        <h1 class="welcome">Hacky Holidays t-shirt</h1>
+        <div class="merch-grid">
+          <div class="merch-col">
+            <img class="merch-image" id="image" src="merch-images/hack-holiday/red.png" height="100" width="180">
+            <br>
+            <div class="merch-price">
+              <h2>$25</h2>
+              <input type='button' onclick='createButton()' value='Buy Now' class="buy-button"/>
+            </div>
+            <p class="merch-description">
+              The materials that went into this product are sustainably sourced and economically friendly.<br>
+              100% Cotton (fiber content may vary for different colors)<br>
+              Medium fabric (6.0 oz/yd² (203 g/m²))<br><br>
+              T-Shirts are printed in Detroit Michigan, and take around a week to arrive. Due our system being new please fill out
+              <a href="https://forms.gle/Hsio685Kw8uR2uKV7" target="_blank">this Google Form</a>
+              with the same info, so we can make sure our system is correct.
+              <a href="https://donate.memphishack.com" target="_blank">Consider making a tax deductible donation to Memphis HackClub today!- Any amount helps! And thank you!</a>
+            </p>
+          </div>
+          <div class="merch-col">
+            <h1>Color Preview Tool</h1>
+            <select id="picDD" class="dropdown">
+              <option value="Red" class="red" selected="selected">Red</option>
+              <option value="Green" class="green">Green</option>
+              <option value="Light-Blue" class="light-blue">Light-Blue</option>
+              <option value="Navy" class="navy">Navy</option>
+              <option value="Purple" class="purple">Purple</option>
+            </div>
+          </select>
           <br>
-
-<br><br>
-             <p><right>//The materials that went into this product are sustainably sourced and economically friendly.
-
-<right><br>//100% Cotton (fiber content may vary for different colors)
-<right><br>//Medium fabric (6.0 oz/yd² (203 g/m²))<br><br>
-</p>
-
-
-
-SHIRT_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', '6XL' ];<br><br>
-
-PRICE = $25;<br>* T-shirt printing may have a very faint fade after first wash.
-<br></right>
-           </p>
-<br>
-
-<br>
-<br>
-    <h1>Color Preview Tool</h1><select id="picDD" class="dropdown">
-    <option value="Red" class = "red" selected>Red</option>
-    <option value="Green" class = "green">Green</option>
-    <option value="Light-Blue" class = "light-blue">Light-Blue</option>
-    <option value="Navy" class = "navy">Navy</option>
-    <option value="Purple"class = "purple">Purple</option>
-</div>
-    </select>
-<br>
-
-<select id="sizeID" class="dropdown">
-    <option value="s" class = "small" selected>small</option>
-    <option value="m" class = "medium">medium</option>
-    <option value="l" class = "large">large</option>
-    <option value="xl" class = "xl">xl</option>
-    <option value="2xl" class = "2xl">2xl</option>
-    <option value="3xl" class = "3xl">3xl</option>
-    <option value="4xl" class = "4xl">4xl</option>
-    <option value="5xl" class = "5xl">5xl</option>
-
-
-
-</select><br>
-<p>Light Blue Large and Light Blue 2XL are out of stock currently.</p><br>
-<h1>Shipping Info</h1>
-
-<br>
-<label>Address<br><textarea id="address"  rows="4" cols="50">
- 
-  </textarea><br>
-<label>Address 2 (Optional)<br><textarea id="address2" rows="4" cols="50">
- 
-  </textarea>
-<br><br>
-<label>City<input id="city" type="text"><br>
-<label>State<select id="state" class="dropdown">
-    <option value="TN"  selected>Tennessee</option>
-    <option value="MS" >Mississippi</option>
-    <option value="AR" >Arkansas</option>
-    <option value="O">Other State</option>
-</select>
-<br><br>
-<label> If other State<input type="text" id="os"><br><br></label>
-
-<label> Zip Code<input type="text" id="zipcode"><br><br></label>
-<label> Email<input type="email" id="email"><br><br>
-<label> Name<input type="text" id="name">
-<br><br>
-<label>Would you like MHC updates sent to this email?<select id="ec" class="dropdown"><br>
-    <option value="yes"  selected>Yes!!!</option>
-    <option value="no" >No.</option>
-
-<br></select>
-<br>
-<p>T-Shirts are printed in Detroit Michigan, and take around a week to arrive.
-
-Due our system being new please fill out <a href="https://forms.gle/Hsio685Kw8uR2uKV7" target="_blank">this Google Form</a> with the same info, so we can make sure our system is correct. 
-
-
-<a href="https://donate.memphishack.com"
-target="_blank">Consider making a tax deductible donation to Memphis HackClub today!- Any amount helps! And thank you!</a>
-</p><br>
-
-
-
-
-
-<div id="paypalPlace"></div>
-
-
-
-
-<script type="text/javascript">
-
-val = 'white';
-finalSize = 'medium';
-
-
-var pictureList = [
-    "merch-images/hack-holiday/red.png",
-    "merch-images/hack-holiday/green.png",
-    "merch-images/hack-holiday/light-blue.png",
-    "merch-images/hack-holiday/navy.png",
-    "merch-images/hack-holiday/purple.png", ];
-
-
-var valList = [
-  "Red", "Green", "Light-Blue", "Navy", "Purple", ];
-
-
-
-window.addEventListener('DOMContentLoaded', () => {
-    const yearDropDown = document.getElementById('picDD');
-    yearDropDown.addEventListener('change', () => { 
-        
-        val = yearDropDown.value;
-        console.log(val);
-        val2 = valList.indexOf(val);
-        color = pictureList[val2];
-
-        document.getElementById("image").src=color;
-
-    
-    
-
-
-    
-    ;
-
-    });
-});
-
-
-    window.addEventListener('DOMContentLoaded', () => {
-    const size = document.getElementById('sizeID');
-    size.addEventListener('change', () => { 
-
-      sizeVal = size.value;
-        console.log(sizeVal);
-        sizeVal2 = valList.indexOf(sizeVal);
-        finalSize = pictureList[sizeVal2];
-
-        
-        
-
-    });
-});
-
-address2 = "NA";
-otherstate ="NA";
-
-
-
-function createButton(){
-
-
-address = document.getElementById('address').value;
-address2 = document.getElementById('address2').value;
-city = document.getElementById('city').value;
-state = document.getElementById('state').value;
-otherState = document.getElementById('os').value;
-zipCode = document.getElementById('zipcode').value;
-email = document.getElementById('email').value;
-emailConsent = document.getElementById('ec').value;
- name = document.getElementById('name').value;
-
-  if (address != "" && city != "" && state !="" && zipCode != "" && email != "" &&emailConsent !=""){
-  finalAddress =  name+"Email:"+email+"\n Ship2:"+address+" \n "+address2+" \n "+city+" \n "+state+" \n "+otherState+" \n "+zipCode+" \n Other MHC emails:"+emailConsent;
-  console.log(finalAddress) 
-  }
-
-    
- 
-    
-var message = finalSize+" HH S"+val+" "+finalAddress;
-newHTML = `
-<p>Click Buy Below to Pay</p>
+          <select id="sizeID" class="dropdown">
+            <option value="s" class="small" selected="selected">small</option>
+            <option value="m" class="medium">medium</option>
+            <option value="l" class="large">large</option>
+            <option value="xl" class="xl">xl</option>
+            <option value="2xl" class="2xl">2xl</option>
+            <option value="3xl" class="3xl">3xl</option>
+            <option value="4xl" class="4xl">4xl</option>
+            <option value="5xl" class="5xl">5xl</option>
+          </select><br>
+          <p>Light Blue Large and Light Blue 2XL are out of stock currently.</p><br>
+          <h1>Shipping Info</h1>
+          <label>Address<br>
+            <textarea id="address" rows="4" cols="50"></textarea><br>
+            <label>Address 2 (Optional)<br>
+              <textarea id="address2" rows="4" cols="50"></textarea>
+              <br><br>
+              <label>City<input id="city" type="text"><br>
+                <label>State<select id="state" class="dropdown">
+                    <option value="TN" selected="selected">Tennessee</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="O">Other State</option>
+                  </select>
+                  <br><br>
+                  <label>
+                    If other State<input type="text" id="os"><br><br></label>
+                  <label>
+                    Zip Code<input type="text" id="zipcode"><br><br></label>
+                  <label>
+                    Email<input type="email" id="email"><br><br>
+                    <label>
+                      Name<input type="text" id="name">
+                      <br><br>
+                      <label>Would you like MHC updates sent to this email?<select id="ec" class="dropdown"><br>
+                          <option value="yes" selected="selected">Yes!!!</option>
+                          <option value="no">No.</option>
+                          <br></select>
+                        <br>
+                        <p></p><br>
+                        <div id="paypalPlace"></div>
+                      </div>
+                    </div>
+                    <p>
+                      <script type="text/javascript">
+                        val = 'white';
+                        finalSize = 'medium';
+                        var pictureList = ["merch-images/hack-holiday/red.png", "merch-images/hack-holiday/green.png", "merch-images/hack-holiday/light-blue.png", "merch-images/hack-holiday/navy.png", "merch-images/hack-holiday/purple.png"];
+                        var valList = ["Red", "Green", "Light-Blue", "Navy", "Purple"];
+                        window.addEventListener('DOMContentLoaded', () => {
+                          const yearDropDown = document.getElementById('picDD');
+                          yearDropDown.addEventListener('change', () => {
+                            val = yearDropDown.value;
+                            console.log(val);
+                            val2 = valList.indexOf(val);
+                            color = pictureList[val2];
+                            document.getElementById("image").src = color;;
+                          });
+                        });
+                        window.addEventListener('DOMContentLoaded', () => {
+                          const size = document.getElementById('sizeID');
+                          size.addEventListener('change', () => {
+                            sizeVal = size.value;
+                            console.log(sizeVal);
+                            sizeVal2 = valList.indexOf(sizeVal);
+                            finalSize = pictureList[sizeVal2];
+                          });
+                        });
+                        address2 = "NA";
+                        otherstate = "NA";
+                        function createButton() {
+                          address = document.getElementById('address').value;
+                          address2 = document.getElementById('address2').value;
+                          city = document.getElementById('city').value;
+                          state = document.getElementById('state').value;
+                          otherState = document.getElementById('os').value;
+                          zipCode = document.getElementById('zipcode').value;
+                          email = document.getElementById('email').value;
+                          emailConsent = document.getElementById('ec').value;
+                          name = document.getElementById('name').value;
+                          if (address != "" && city != "" && state != "" && zipCode != "" && email != "" && emailConsent != "") {
+                            finalAddress = name + "Email:" + email + "\n Ship2:" + address + " \n " + address2 + " \n " + city + " \n " + state + " \n " + otherState + " \n " + zipCode + " \n Other MHC emails:" + emailConsent;
+                            console.log(finalAddress)
+                          }
+                          var message = finalSize + " HH S" + val + " " + finalAddress;
+                          newHTML = `
 <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="business" value="7TSMGFEKXAFUY" />
 <input type="hidden" name="amount" value="25" />
 <input type="hidden" name="no_recurring" value="1" />
-<input type="hidden" name="item_name" value="`+message+`" />
+<input type="hidden" name="item_name" value="` +
+                              message +
+                              `" />
 <input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://cdn-icons.flaticon.com/png/512/3757/premium/3757945.png?token=exp=1638162700~hmac=0853327e77efe04f6b7233a656616edb" height="25%" width="25%" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Pay with PayPal button" />
+<input type="image" src="images/paypal-btn.png" height="25%" width="40%" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Pay with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>`;
-
-
-
-;
-    console.log(message);
-    document.getElementById('paypalPlace').innerHTML = newHTML;
-    
-}
-
-
-
-
-
-
-</script>
-
-
-
-
-
-
-
-<style>
-  .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-  .white{
-    background-color: white;
-  }
-  .red{
-    background-color: red;
-    color: white
-  }
-  .yellow{
-    background-color: yellow;
-    
-  }
-  .navy{
-    background-color: navy;
-    color: white
-  }
-  .pink{
-    background-color: pink;
-
-  }
-
-
-
-</style>
-
-  </script>
-
-<br>
-<input type='button' onclick='createButton()' value='Buy Now'/><br>
-
-
-<h1 class=welcome>Freebies Below</h1>
-
-  <a href="https://www.instagram.com/memphishackclub/" target="_blank" class="fa fa-instagram"></a>
-  <a href="https://twitter.com/MHackclub" target="_blank" class="fa fa-twitter"></a>
-  <a href="https://www.facebook.com/groups/656997425191729" target="_blank" class="fa fa-facebook"></a>
-   <a href="https://www.linkedin.com/company/memphis-hack-club/?viewAsMember=true" class="fa fa-linkedin" target="_blank"></a>
-   <a href="https://www.youtube.com/channel/UCQEw733Z4ID3AVLtFpQ5hyw" class="fa fa-youtube" target="_blank"></a>
-
-<br>
-<br>
-  </div>
-</div>
-
-  </body>
- 
-<script src="script.js"></script>
-
-    
-
-
-
-
-
+</form>`;;
+                          console.log(message);
+                          document.getElementById('paypalPlace').innerHTML = newHTML;
+                        }
+                      </script>
+                      <style>
+                        .dropdown {
+                          position: relative;
+                          display: inline-block;
+                        }
+                        .dropdown-content {
+                          display: none;
+                          position: absolute;
+                          background-color: #f9f9f9;
+                          min-width: 160px;
+                          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                          padding: 12px 16px;
+                          z-index: 1;
+                        }
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                        .white {
+                          background-color: white;
+                        }
+                        .red {
+                          background-color: red;
+                          color: white;
+                        }
+                        .yellow {
+                          background-color: yellow;
+                        }
+                        .navy {
+                          background-color: navy;
+                          color: white;
+                        }
+                        .pink {
+                          background-color: pink;
+                        }
+                      </style>
+                    </script>
+                    <br>
+                    <h1 class="welcome">Freebies Below</h1>
+                    <a href="https://www.instagram.com/memphishackclub/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/MHackclub" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.facebook.com/groups/656997425191729" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/company/memphis-hack-club/?viewAsMember=true" class="fa fa-linkedin" target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UCQEw733Z4ID3AVLtFpQ5hyw" class="fa fa-youtube" target="_blank"></a>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+              </body>
+              <script src="script.js"></script>
