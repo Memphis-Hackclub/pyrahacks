@@ -15,7 +15,7 @@ body {
   color: #fafafa;
 }
 
-.projectImgs {
+.cardImgs {
   width: 100%;
   height: auto;
 }
@@ -160,7 +160,7 @@ a:hover #zoom {
   line-height: 1.5em;
 }
 
-.content a:not(.fa):after {
+p a:not(.fa):after {
   content: "\f0a9";
   font-family: FontAwesome;
   font-size: 0;
@@ -173,7 +173,7 @@ a:hover #zoom {
   transform: translateY(-1px);
 }
 
-.content a:hover::after {
+p a:hover::after {
   font-size: 0.7em;
   transition: 0.2s;
 }
@@ -294,7 +294,7 @@ iframe {
     font-size: 1em;
   }
 
-  .projectImgs {
+  .cardImgs {
     width: 100%;
     height: auto;
   }
@@ -347,12 +347,12 @@ iframe {
   }
 }
 
-.project-grid {
+.card-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.project {
+.card {
   margin: 1em;
   background: #11151f;
   padding: 0.75em;
@@ -362,7 +362,7 @@ iframe {
   padding-bottom: 2.2em;
 }
 
-.project-title {
+.card-title {
   font-size: 1.5em;
   font-family: 'Space Mono';
   font-weight: 400;
@@ -370,25 +370,34 @@ iframe {
   padding-bottom: 0.3em;
 }
 
-.project img {
+.card img {
   height: 20vh;
   object-fit: cover;
   border-radius: 0.2em;
 }
 
-.project p {
+.merch>.card img {
+  object-fit: contain !important;
+  background: white;
+}
+
+.merch>.card>a>.card-title, .merch>.card>.card-title {
+  text-align: left;
+}
+
+.card p {
   font-size: 0.9em;
   text-align: left;
 }
 
 @media (max-width: 1150px) {
-  .project-grid {
-    grid-template-columns: auto auto;
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 675px) {
-  .project-grid {
+  .card-grid {
     grid-template-columns: auto;
   }
 }

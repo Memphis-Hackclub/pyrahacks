@@ -1,4 +1,3 @@
-console.log("https://the-new-website-2.philippounds.repl.co/merch.html\n")
 function nextTime() {
 
   var currentDate = new Date();
@@ -55,7 +54,6 @@ function nextTime() {
 meeting = nextTime();
 meeting = String(meeting);
 
-
 var speed = 75;
 var i = 0;
 
@@ -66,5 +64,4 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-typeWriter()
-console.log("%cIf you're here, you should definitely join Memphis Hack Club! 🧑‍💻", "font-size: 2em;text-align:right;font-weight:bold;")
+typeWriter();
