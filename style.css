@@ -372,6 +372,7 @@ iframe {
 
 .card img {
   height: 20vh;
+  width: 100%;
   object-fit: cover;
   border-radius: 0.2em;
 }
@@ -388,6 +389,11 @@ iframe {
 .card p {
   font-size: 0.9em;
   text-align: left;
+  color: #6476a1;
+}
+
+.content-introduction {
+  margin: 1.5em;
 }
 
 @media (max-width: 1150px) {
