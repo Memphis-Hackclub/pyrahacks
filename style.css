@@ -10,14 +10,18 @@ body {
   font-family: 'Bellota Text', sans-serif;
   height: 100%;
   /* background-color: #424242;
-     */
-  background-color: #0b0e14;
+     */ 
+  background: linear-gradient(150deg, hsl(307, 94%, 40%) 0%, hsl(211, 62%, 45%) 100%);
+  background-attachment: fixed;
+  
   color: #fafafa;
 }
 
 .cardImgs {
   width: 100%;
   height: auto;
+  border-radius: 50%;
+
 }
 
 #particles {
@@ -38,6 +42,7 @@ body {
 }
 
 .top-background {
+  background-image: url("banner.jpg");
   text-align: center;
   background-position: center;
   background-attachment: fixed;
@@ -47,10 +52,10 @@ body {
   min-height: 100%;
   width: auto;
   height: 100vh;
-  z-index: -100;
+  /* z-index: -100; */
   margin: 0;
-  background: hsl(10deg 98% 63%);
-  background: linear-gradient(150deg, hsl(10deg 98% 63%) 0%, hsl(280deg 100% 20%) 100%);
+  /* background: hsl(10deg 98% 63%);
+  background: linear-gradient(150deg, hsl(10deg 98% 63%) 0%, hsl(280deg 100% 20%) 100%); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -294,10 +299,7 @@ iframe {
     font-size: 1em;
   }
 
-  .cardImgs {
-    width: 100%;
-    height: auto;
-  }
+
 
   .top-background {
     height: 100%;
@@ -406,4 +408,15 @@ iframe {
   .card-grid {
     grid-template-columns: auto;
   }
+}
+
+.spacer{
+  aspect-ratio:900/100;
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.layer1{
+  background-image: url("layer1.svg");
 }
