@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Manrope:wght@800&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fruktur&family=Mountains+of+Christmas:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Press+Start+2P&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +13,15 @@ body {
   height: 100%;
   /* background-color: #424242;
      */ 
-  background: linear-gradient(150deg, hsl(307, 94%, 40%) 0%, hsl(211, 62%, 45%) 100%);
+  background: linear-gradient(170deg, #001423 1%, #020202);
   background-attachment: fixed;
   
   color: #fafafa;
 }
-
+:root{
+ --neon-text-color: #DF3940;
+--neon-border-color: #78E6D3;
+}
 .cardImgs {
   width: 100%;
   height: auto;
@@ -26,6 +31,29 @@ body {
 
 #particles {
   height: 100vh;
+}
+#neonRed{
+ 
+
+   text-shadow:
+            -0.2rem -0.2rem 1rem var(--neon-text-color),
+            0.2rem 0.2rem 1rem var(--neon-text-color),
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+}
+#neonBlue{
+
+   box-shadow:
+            0 0 .5rem var(--neon-border-color),
+            inset 0 0 .5rem var(--neon-border-color),
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    
 }
 
 .button {
@@ -42,7 +70,7 @@ body {
 }
 
 .top-background {
-  background-image: url("banner.jpg");
+  
   text-align: center;
   background-position: center;
   background-attachment: fixed;
@@ -64,12 +92,13 @@ body {
 
 #zoom {
   color: #fafafa;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .subwelcome {
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   text-shadow: 1px 1px 1px #92DCE5;
-  color: firebrick;
+  color: #DF3940;
   font-size: 1.25em;
 }
 
@@ -83,6 +112,8 @@ body {
   text-align: center;
   width: max-content;
   max-width: 90%;
+  padding: 8%;
+  overflow: visible;
 }
 
 .titletext h1 {
@@ -217,8 +248,8 @@ p a:hover::after {
 
 .welcome {
   font-family: 'Space Mono', sans-serif;
-  text-shadow: 0px 2px 3px rgba(1, 166, 37, 0.4);
-  color: rgb(133, 212, 222);
+  text-shadow: 0px 2px 3px #41ead4;
+  color: #FF002B;
   font-size: 2.3em;
   word-spacing: -0.3em;
 }
