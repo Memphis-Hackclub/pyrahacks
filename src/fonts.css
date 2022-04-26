@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Apercu";
+  src: url("assets/Apercu.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Apercu Mono";
+  src: url("assets/ApercuMonoProRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Apercu Mono";
+  src: url("assets/ApercuMonoProBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
