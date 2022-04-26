@@ -14,7 +14,10 @@ export default {
       rel="nofollow"
       >About</a
     >
-    <a href="https://pyrahacks.devpost.com" target="_blank" rel="nofollow"
+    <a
+      href="https://pyrahacks.devpost.com/register"
+      target="_blank"
+      rel="nofollow"
       >Register</a
     >
   </nav>

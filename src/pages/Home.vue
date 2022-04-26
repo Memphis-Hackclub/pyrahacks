@@ -17,7 +17,9 @@
             type="secondary"
             >June 10, 2022</Button
           >
-          <Button href="https://pyrahacks.devpost.com/">Pre-Register</Button>
+          <Button href="https://pyrahacks.devpost.com/register"
+            >Pre-Register</Button
+          >
         </div>
         <h2>
           Sponsored by
