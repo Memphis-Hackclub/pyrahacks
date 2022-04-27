@@ -1,0 +1,1 @@
+import{_ as o,g as t,o as a,c as s,b as n,w as r,F as c,a as _,e as l}from"./index.66baf780.js";const d={name:"404"},m=_("h1",null,"404",-1),p=l("Go home");function i(u,f,h,x,k,$){const e=t("router-link");return a(),s(c,null,[m,n(e,{to:"/home"},{default:r(()=>[p]),_:1})],64)}var N=o(d,[["render",i]]);export{N as default};
