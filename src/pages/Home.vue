@@ -13,7 +13,7 @@
         </h1>
         <div class="buttons">
           <Button
-            href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220426%2F20220427&details=PyraHacks%20%2722%20is%20a%20virtual%20hackathon%20supporting%20St.%20Jude%20Children%27s%20Hospital.&location=Virtual&text=PyraHacks%20%2722"
+            href="https://calendar.google.com/calendar/u/0/r/eventedit?dates=20220610/20220612&details=PyraHacks+%2722+is+a+virtual+hackathon+supporting+St.+Jude+Children%27s+Hospital.&location=Virtual&text=PyraHacks+%2722&pli=1"
             type="secondary"
             >June 10, 2022</Button
           >
