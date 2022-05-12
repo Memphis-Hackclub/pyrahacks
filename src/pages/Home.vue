@@ -74,7 +74,7 @@ export default {
          {
           name: "Leading Learners",
           url: "https://www.leading-learners.com",
-          image: "Leading Learners White Logo Full Text PNG.png",
+          image: "Leading Learners.png",
         },
         {
           name: "Sticker Mule",
