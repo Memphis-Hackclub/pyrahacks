@@ -71,11 +71,17 @@ export default {
           url: "https://kiddobyte.org/",
           image: "kiddobyte-logo.png",
         },
+         {
+          name: "Leading Learners",
+          url: "https://www.leading-learners.com",
+          image: "Leading Learners White Logo Full Text PNG.png",
+        },
         {
           name: "Sticker Mule",
           url: "https://stickermule.com/",
           image: "stickermule-logo.svg",
         },
+           
       ],
     };
   },
