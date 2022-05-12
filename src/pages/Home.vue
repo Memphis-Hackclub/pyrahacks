@@ -71,6 +71,11 @@ export default {
           url: "https://kiddobyte.org/",
           image: "kiddobyte-logo.png",
         },
+           {
+          name: "Replit",
+          url: "https://replit.com/",
+          image: "replit-logo.png",
+        },
          {
           name: "Leading Learners",
           url: "https://www.leading-learners.com",
