@@ -20,6 +20,12 @@ export default {
       rel="nofollow"
       >Register</a
     >
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScbMbe0GbKvtfmPkFatJjQFsF7TyYL-TmLWA3Bn9bJAhz_6pQ/viewform"
+      target="_blank"
+      rel="nofollow"
+      >Pledge</a
+    >
   </nav>
 </template>
 
@@ -81,7 +87,7 @@ nav a:last-of-type {
 
   nav a,
   .nav-logo {
-    margin-right: 10%;
+    margin-right: 5%;
     font-size: 1em;
   }
 
