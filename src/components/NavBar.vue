@@ -88,7 +88,7 @@ nav a:last-of-type {
 
   nav a,
   .nav-logo {
-    margin-right: 5%;
+    margin-right: 10%;
     font-size: 1em;
   }
 

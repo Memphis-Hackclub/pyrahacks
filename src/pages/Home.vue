@@ -9,7 +9,7 @@
     <div class="content-parent">
       <div class="content">
         <h1>
-          A free, fast-paced online hackathon for anyone benefiting St. Jude
+          A free, fast-paced online hackathon benefiting St.<span class="fix-letter">J</span>ude
         </h1>
         <div class="buttons">
           <Button
@@ -180,6 +180,10 @@ h2 {
 
 .sponsor-grid a:hover::after {
   opacity: 1;
+}
+
+.fix-letter {
+  kerning: 0.7ch;
 }
 
 @media only screen and (max-width: 1200px) {
