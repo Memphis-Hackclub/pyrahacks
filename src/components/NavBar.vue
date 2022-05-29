@@ -18,6 +18,7 @@ export default {
       href="https://pyrahacks.devpost.com/register"
       target="_blank"
       rel="nofollow"
+      class="mobile-hidden"
       >Register</a
     >
     <a
@@ -94,6 +95,10 @@ nav a:last-of-type {
   .nav-logo {
     height: 2.5rem;
     width: 2.5rem;
+  }
+
+  .mobile-hidden {
+    display: none;
   }
 }
 </style>
