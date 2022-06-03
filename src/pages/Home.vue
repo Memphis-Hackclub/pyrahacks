@@ -81,12 +81,18 @@ export default {
           url: "https://www.leading-learners.com",
           image: "Leading Learners.png",
         },
+          {
+          name: "Give My Certificate",
+          url: "https://givemycertificate.com",
+          image: "GMC LogoS.png",
+        },
         {
           name: "Sticker Mule",
           url: "https://stickermule.com/",
           image: "stickermule-logo.svg",
         },
-           
+        
+          
       ],
     };
   },
