@@ -13,8 +13,8 @@ const routes = [
     component: () => import("../pages/Home.vue"),
   },
   {
-    path: "/about",
-    component: () => import("../pages/About.vue"),
+    path: "/leaderboard",
+    component: () => import("../pages/Leaderboard.vue"),
   },
   {
     path: "/404",

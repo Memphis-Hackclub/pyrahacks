@@ -9,13 +9,7 @@ export default {
     <img src="../assets/pyrahacks.svg" alt="PyraHacks Logo" class="nav-logo" />
     <router-link to="/">Home</router-link>
     <a
-      href="https://pyrahacks.devpost.com/#challenge-description"
-      target="_blank"
-      rel="nofollow"
-      >About</a
-    >
-    <a
-      href="https://pyrahacks.devpost.com/register"
+      href="https://pyrahacks.devpost.com/"
       target="_blank"
       rel="nofollow"
       class="mobile-hidden"

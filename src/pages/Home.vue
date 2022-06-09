@@ -9,16 +9,17 @@
     <div class="content-parent">
       <div class="content">
         <h1>
-          A free, fast-paced online hackathon benefiting St.<span class="fix-letter">J</span>ude
+          A free, fast-paced online hackathon benefiting St.<span
+            class="fix-letter"
+            >J</span
+          >ude
         </h1>
         <div class="buttons">
-          <Button
-            href="https://calendar.google.com/calendar/u/0/r/eventedit?dates=20220610/20220612&details=PyraHacks+%2722+is+a+virtual+hackathon+supporting+St.+Jude+Children%27s+Hospital.&location=Virtual&text=PyraHacks+%2722&pli=1"
-            type="secondary"
-            >June 10, 2022</Button
+          <Button href="/#/leaderboard" type="secondary" target="_self"
+            >Leaderboard</Button
           >
-          <Button href="https://pyrahacks.devpost.com/register"
-            >Pre-Register</Button
+          <Button href="https://form.jotform.com/221536028365050"
+            >Add Project</Button
           >
         </div>
         <h2>
@@ -71,7 +72,7 @@ export default {
           url: "https://kiddobyte.org/",
           image: "kiddobyte-logo.png",
         },
-           {
+        {
           name: "Replit",
           url: "https://replit.com/",
           image: "replit-logo.png",

@@ -4,7 +4,7 @@
     @click="$emit('click')"
     :class="type"
     rel="nofollow"
-    target="_blank"
+    :target="target"
     ><slot></slot
   ></a>
 </template>
@@ -21,6 +21,10 @@ export default {
     type: {
       type: String,
       default: "primary",
+    },
+    target: {
+      type: String,
+      default: "_blank",
     },
   },
 };
