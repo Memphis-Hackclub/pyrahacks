@@ -79,7 +79,7 @@ export default {
         },
         {
           name: "Leading Learners",
-          url: "https://www.leading-learners.com",
+          url: "https://www.leading-learners.com/",
           image: "Leading Learners.png",
         },
         {
@@ -89,8 +89,18 @@ export default {
         },
         {
           name: "Give My Certificate",
-          url: "https://givemycertificate.com",
+          url: "https://givemycertificate.com/",
           image: "GMC LogoS.png",
+        },
+        {
+          name: "MinePrint",
+          url: "https://mineprint.org/",
+          image: "mineprint.png",
+        },
+        {
+          name: "MakerSpace",
+          url: "https://makerspce-info.philippounds.repl.co/",
+          image: "makerspace.png",
         },
       ],
     };
