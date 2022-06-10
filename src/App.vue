@@ -7,6 +7,13 @@ export default {
 <template>
   <NavBar />
   <router-view />
+  <iframe
+    src="https://player.twitch.tv/?channel=memphishack&parent=pyrahacks.com"
+    height="180"
+    width="320"
+    class="stream"
+    allowfullscreen>
+</iframe>
 </template>
 
 <style>
@@ -66,5 +73,15 @@ a {
   100% {
     box-shadow: 0 0 15px var(--accent);
   }
+}
+
+.stream {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 200;
+  border: none;
+  box-shadow: 0 0 20px var(--accent);
+  border-radius: 3px;
 }
 </style>
