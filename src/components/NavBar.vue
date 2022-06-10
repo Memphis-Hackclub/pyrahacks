@@ -13,13 +13,19 @@ export default {
       target="_blank"
       rel="nofollow"
       class="mobile-hidden"
-      >Register</a
+      >About</a
     >
     <a
       href="https://docs.google.com/forms/d/e/1FAIpQLScbMbe0GbKvtfmPkFatJjQFsF7TyYL-TmLWA3Bn9bJAhz_6pQ/viewform"
       target="_blank"
       rel="nofollow"
       >Pledge</a
+    >
+    <a
+      href="https://pyrahacksschedual.blakefreeman007.repl.co/"
+      target="_blank"
+      rel="nofollow"
+      >Schedule</a
     >
   </nav>
 </template>
