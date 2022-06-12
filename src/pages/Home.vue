@@ -18,7 +18,7 @@
           <Button href="/#/leaderboard" type="secondary" target="_self"
             >Leaderboard</Button
           >
-          <Button href="https://form.jotform.com/221536028365050"
+          <Button href="https://form.jotform.com/221623076999063"
             >Add Project</Button
           >
         </div>
