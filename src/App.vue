@@ -8,6 +8,7 @@ export default {
   <NavBar />
   <router-view />
   <iframe
+    v-if="false"
     src="https://player.twitch.tv/?channel=memphishack&parent=pyrahacks.com"
     height="180"
     width="320"
