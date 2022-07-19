@@ -16,10 +16,10 @@ export default {
       >About</a
     >
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLScbMbe0GbKvtfmPkFatJjQFsF7TyYL-TmLWA3Bn9bJAhz_6pQ/viewform"
+      href="https://pyrahacks.devpost.com/updates"
       target="_blank"
       rel="nofollow"
-      >Pledge</a
+      >Updates</a
     >
     <a
       href="https://pyrahacksschedual.blakefreeman007.repl.co/"

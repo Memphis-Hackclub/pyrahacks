@@ -15,11 +15,11 @@
           >ude
         </h1>
         <div class="buttons">
-          <Button href="/#/leaderboard" type="secondary" target="_self"
-            >Leaderboard</Button
+          <Button href="https://discord.pyrahacks.com/" type="secondary"
+            >Discord Server</Button
           >
-          <Button href="https://forms.gle/TnP7ucaBbnjg2WxN9"
-            >Add Project</Button
+          <Button href="https://pyrahacks.devpost.com/project-gallery"
+            >Winners</Button
           >
         </div>
         <h2>
