@@ -57,6 +57,11 @@ export default {
           url: "https://www.peabodymemphis.com/",
           image: "peabody-logo.svg",
         },
+         {
+          name: "Wolfram",
+          url: "https://www.wolfram.com/",
+          image: "wolfram-logo.png",
+        },
        
         {
           name: "echo3D",
