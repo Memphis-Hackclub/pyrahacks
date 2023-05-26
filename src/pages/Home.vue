@@ -57,11 +57,7 @@ export default {
           url: "https://www.peabodymemphis.com/",
           image: "peabody-logo.svg",
         },
-        {
-          name: "Hack Club Bank",
-          url: "https://hackclub.com/bank",
-          image: "hc-bank-logo.svg",
-        },
+       
         {
           name: "echo3D",
           url: "https://www.echo3d.co/",
@@ -72,36 +68,19 @@ export default {
           url: "https://kiddobyte.org/",
           image: "kiddobyte-logo.png",
         },
-        {
-          name: "Replit",
-          url: "https://replit.com/",
-          image: "replit-logo.png",
-        },
+        
         {
           name: "Leading Learners",
           url: "https://www.leading-learners.com/",
           image: "Leading Learners.png",
         },
-        {
-          name: "Sticker Mule",
-          url: "https://stickermule.com/",
-          image: "stickermule-logo.svg",
-        },
-        {
-          name: "Give My Certificate",
-          url: "https://givemycertificate.com/",
-          image: "GMC LogoS.png",
-        },
+       
         {
           name: "MinePrint",
           url: "https://mineprint.org/",
           image: "mineprint.png",
         },
-        {
-          name: "MakerSpace",
-          url: "https://makerspce-info.philippounds.repl.co/",
-          image: "makerspace.png",
-        },
+      
       ],
     };
   },
