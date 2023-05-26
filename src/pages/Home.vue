@@ -41,6 +41,9 @@
             <img :src="`/sponsors/${s.image}`" :alt="s.name" />
           </a>
         </div>
+        <h2>
+        Judges and St. Jude Contributors: Blake Freeman, Konstantin Glumov, Hirenkumar Patel
+        </h2>
       </div>
     </div>
   </main>
