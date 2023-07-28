@@ -2,7 +2,7 @@
   <main>
     <iframe
       id="iframe-snsnmntqhor"
-      src="https://keepthescore.co/embed/snsnmntqhor/"
+      src="https://keepthescore.com/board/yjskwjpvhybsr/"
       style="width: calc(100% - 4em); border: none; height: calc(100% - 1em)"
     ></iframe>
   </main>
